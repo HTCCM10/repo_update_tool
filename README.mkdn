@@ -1,0 +1,28 @@
+Repo Update Tool
+===========
+
+Getting Started
+---------------
+
+This tool was written by g60madman, it's designed to allow you to keep all repo's inline with CyanongenMod as the CM Team continues to develop through github. While these scripts where written for the HTC Evo V 4g and github, anyone can easily edit these scripts for any other hybrid ROM be it CM, AOSP, AOKP, and or any other github like service.
+
+To get started you first need to edit all *.sh files. You simply need to edit lines 11 & 14 to point to the proper directories. Once you have updated the files simply run the download_repo.sh file. This will download all the repo's for the Virgin Mobile HTC Evo from HTCCM10 organization and then create a git remote link to all of CyanogenMod's repo's. This part of the script is meant to only be run once.
+
+    sh ./download_repo.sh
+
+Once it's done downloading all the key repo's and creating the git remote link's, it's time to sync up with CyanogenMod. This sync script can be run as often as you like to keep these repo's synced with CyanogenMod as the CyanogenMod Team updates code around the clock. If a repo has an update you will need to save the commit so it can pull in the merge.
+
+    sh ./sync_repo.sh
+
+Once the sync is done it's time to copy the code to your build directory. Before running this copy_repo script make sure you have run a "repo sync" in your local CyanogenMod source directory so all your source files are up to date, then proceed foward.
+    
+    sh ./copy_repo.sh
+
+At this point build your source code and test the ROM to make sure life is good.
+
+Pushing the Code
+---------------
+
+Only users that are associated with Team HTCCM10 can use this last script as this will push the updated code back to our github. Once the ROM is fully tested and everything looks solid simply run the following command to push back up to HTCCM10 github updates.
+
+    sh ./push_repo.sh
