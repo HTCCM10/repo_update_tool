@@ -33,6 +33,7 @@ git clone git@github.com:HTCCM10/android_hardware_qcom_media-legacy.git
 git clone git@github.com:HTCCM10/android_packages_apps_Camera.git
 git clone git@github.com:HTCCM10/android_packages_apps_Gallery2.git
 git clone git@github.com:HTCCM10/android_system_core.git
+git clone git@github.com:HTCCM10/android_vendor_cm.git
 
 # git remote add links to CyanogenMod source code
 cd $REPODIR
@@ -77,4 +78,7 @@ git remote add cm https://github.com/CyanogenMod/android_packages_apps_Gallery2.
 cd $REPODIR
 cd android_system_core
 git remote add cm https://github.com/CyanogenMod/android_system_core.git
+cd $REPODIR
+cd android_vendor_cm
+git remote add cm https://github.com/CyanogenMod/android_vendor_cm.git
 cd $REPODIR

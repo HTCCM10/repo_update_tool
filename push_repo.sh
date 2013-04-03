@@ -61,3 +61,5 @@ cd $REPODIR
 cd android_system_core
 git push -u origin
 cd $REPODIR
+cd android_vendor_cm
+git push -u origin

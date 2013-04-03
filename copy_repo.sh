@@ -76,3 +76,7 @@ cd $WORKDIR
 rm -rf system/core/*
 cp -r $REPODIR/android_system_core/* $WORKDIR/system/core
 
+cd $WORKDIR
+rm -rf vendor/cm/*
+cp -r $REPODIR/android_vendor_cm/* $WORKDIR/vendor/cm
+

@@ -75,3 +75,7 @@ cd android_system_core
 git fetch cm cm-10.1
 git merge FETCH_HEAD
 cd $REPODIR
+cd android_vendor_cm
+git fetch cm cm-10.1
+git merge FETCH_HEAD
+cd $REPODIR
